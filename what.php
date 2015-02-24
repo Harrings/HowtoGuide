@@ -6,12 +6,12 @@
 <body>
 <nav>
 	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="better.html">Why its better</a></li>
-		<li><a href="setup.html">Set Up</a></li>
-		<li><a href="functions.html">Different Functions</a></li>
-		<li><a href="when.html">When to use what</a></li>
-		<li><a href="tips.html">Tips and Tricks</a></li>
+		<li><a href="index.php">Home</a></li>
+		<li><a href="better.php">Why its better</a></li>
+		<li><a href="setup.php">Set Up</a></li>
+		<li><a href="functions.php">Different Functions</a></li>
+		<li><a href="when.php">When to use what</a></li>
+		<li><a href="tips.php">Tips and Tricks</a></li>
 	</ul>
 </nav>
 <h1>Guide to Basic use of Kint for PHP</h1>
@@ -23,7 +23,7 @@
 <p> Kint is a debugging tool that adds in new functionality to php to help with the debugging process.
 <br>It adds extra functions to complement or replace var_dump() and debug_backtrace() that allow you to view
 <br>more information in an easier to read to format. </p>
-<p>All you need to do is have Kint installed (<a href="setup.html">Basic Install Guide</a>) and then you can get
+<p>All you need to do is have Kint installed (<a href="setup.php">Basic Install Guide</a>) and then you can get
 <br>started with calling Kint functions.</p>
 <p>Here is a basic example of how it works.
 <P>Here we have a basic PHP snippet with only a simple array called <strong>$_courses</strong> filled with course numbers
@@ -60,6 +60,6 @@ Kint::dump( $courses);
 ?>
 
 <br>
-<h3><a href="home.html"><strong>Previous</strong></a><p>            </p><a href="better.html"><strong>Next</strong></a>
+<h3><a href="home.php"><strong>Previous</strong></a><p>            </p><a href="better.php"><strong>Next</strong></a>
 	</body>
 </html>	
