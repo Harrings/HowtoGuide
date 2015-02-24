@@ -57,6 +57,7 @@ $courses = array(
 	290 =>"Web Development",
 	);
 Kint::dump( $courses);
+?>
 
 <br>
 <h3><a href="home.html"><strong>Previous</strong></a><p>            </p><a href="better.html"><strong>Next</strong></a>
