@@ -26,12 +26,27 @@
 <p>All you need to do is have Kint installed (<a href="setup.html">Basic Install Guide</a>) and then you can get
 <br>started with calling Kint functions.</p>
 <p>Here is a basic example of how it works.
-<P>Here we have a basic PHP page with only a simple array called <strong>$_courses</strong> filled with course numbers
+<P>Here we have a basic PHP snippet with only a simple array called <strong>$_courses</strong> filled with course numbers
 <br>as the key and course name as the value</p>
-<img>Insert Image here of code</img>
+<pre>
+  <code>
+  $courses = array(
+    161 => "Program 1A",
+    162 => "Program 1B",
+	225 => "Discrete Math",
+	290 =>"Web Development",
+	);
+	  </code>
+</pre>
+
 <p>To use the Kint you need to require the Kint class PHP files then call a Kint function for this example we will use
 <br><strong>Kint::dump( )</strong> which shows the contents of the variable inside the function.
-<img>showing basic Kint dump <img>
+<pre>
+  <code>
+	require 'Kint.class.php';
+	Kint::dump( $courses);
+  </code>
+</pre>
 <p>Now once we load the page in question in our browser we can see the Kint output showing the contents of the variable <strong>$_courses</strong>
 <img>Image showing kint output<img>
 
