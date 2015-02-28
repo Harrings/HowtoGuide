@@ -36,9 +36,21 @@
 <li>You are now set up and ready to use Kint. </li>
 </ol>
 <h3>Composer</h3>
+<ol>
 <li>If you do not already have Composer set up on your machine you can downloand and install it at the composer website <a href="https://getcomposer.org/">here</a></li>
-<li>Create a new file called <strong>composer.json</strong> in the directory with your php files and copy and paste the information found <a href="composer.json">here</a> into the document.
-
+<li>Create a new file called <strong>composer.json</strong> in the directory with your php files and copy and paste the information found <a href="composer.html">here</a> into the document. </li>
+<li>Open up your command prompt and navigate to your project directory and start composer by typing in <strong>composer</strong> then once composer is running enter in the following line.
+<br>
+<pre>
+	<code>
+	php composer.phar install
+	</code>
+</pre>
+<p>Here is a screenshot of what it should look like. <img src="composer.png" alt="Composer" height="334" width="665"> </li>
+<li>Add the line <strong>require 'Kint.class.php';</strong> at the top of any files that will use the Kint functions. Since I unpacked my directory in same file 
+<br>as my PHP files no extra path is needed but if you unpacked in a different place then you would need to add the file path to the require statement. </li>
+<li>You are now set up and ready to use Kint. </li>
+</ol>
 
 <br>
 <h3><a href="better.php"><strong>Previous</strong></a><p>            </p><a href="functions.php"><strong>Next</strong></a>

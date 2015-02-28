@@ -49,8 +49,7 @@
 ?>
 <li><h3>-d()</h3><br>
 <p><strong>-d()</strong> removes all previous output to screen so the dump is the first thing that shows up at the top of the screen. As you can see from the trace
-<br>the code is located below this sentence but the dump will appear at the top of the screen. However on the OSU Server this functionality is disabled
-<br>but you can view a screen shot of what the output would be below. </p>
+<br>the code is located below this sentence but the dump will appear at the top of the screen. </p>
 <pre>
 	<code>
 	Kint::trace();
@@ -58,52 +57,11 @@
 	</code>
 </pre>
 <?php
-	-d($courses);
+	-Kint::dump($courses);
 	Kint::trace();
 ?>
-<img src="minusdump.png" alt="-d()" height="325" width="900">
-</li>
-<li><h3>!d()</h3><br>
-<p><strong>!d()</strong> will work the same as the standard <strong>d()</strong> except it will already be expanded. This can be very useful when displaying time stamps.
- <pre>
-  <code>
-	$info=1424827818;
-	!d($info);
-  </code>
-</pre>
-<?php
-	$info=1424827818;
-	!d($info);
-?>
-</li>
-<li><h3>@d()</h3><br>
-<p><strong>@d()</strong> will cause the output to be returned rather then displayed. It can be used to log to a file for debugging but apart from that behaves the same 
-<br> as the standard <strong>d()</strong>
- <pre>
-  <code>
-	$output=@d($courses);
-  </code>
-</pre>
-<li><h3>dd()</h3><br>
-<p><strong>dd()</strong> is essentially the opposite of <strong>-d()</strong> as everything after the call is ignored. To keep my previous and back botton I will place
-<br>the actualy code below my buttons but through the trace you can see there is more code that will not be displayed. </p>
-<br> 
- <pre>
-  <code>
-	$end="This is the end";
-	Kint::trace();
-	dd($end);
-	echo "This will never display";
-  </code>
-</pre>
-</li>
+
 <br>
 <h3><a href="functions.php"><strong>Previous</strong></a><p>            </p><a href="tips.php"><strong>Next</strong></a>
-<?php
-	$end="This is the end";
-	Kint::trace();
-	dd($end);
-	echo "This will never display";
-?>
 	</body>
 </html>	
