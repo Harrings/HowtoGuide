@@ -10,7 +10,7 @@
 		<li><a href="what.php">What it is</a></li>
 		<li><a href="better.php">Why its better</a></li>
 		<li><a href="functions.php">Different Functions</a></li>
-		<li><a href="when.php">When to use what</a></li>
+		<li><a href="when.php">Modifiers</a></li>
 		<li><a href="tips.php">Tips and Tricks</a></li>
 	</ul>
 </nav>
